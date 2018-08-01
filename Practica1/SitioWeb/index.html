@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html ng-app="ModuloPrincipal">
+<head>
+    <meta charset="utf-8" />
+    <title>Aplicaci&oacute;n Angular JS</title>
+    <!--Bootstrap y angular-->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/angular-ui-router.js"></script>
+    <script src="scripts/jquery-1.11.3.min.js"></script>
+
+    <!--Archivos de configuracion inicial en nuestra aplicacion-->
+    <script src="app/moduloprincipal.js"></script>
+    <script src="app/app.js"></script>
+
+    <!--Servicios-->
+    <script src="app/servicios/EmpresasService.js"></script>
+
+    <!--Nuevos controladores que se vayan agregando-->
+     <script src="app/empresas/EmpresasGetCtrl.js"></script> 
+     <script src="app/empresas/EmpresasAddCtrl.js"></script>
+     <script src="app/empresas/EmpresasEditCtrl.js"></script>
+
+</head>
+<body >
+    <h1>P&aacute;gina principal</h1>
+    <div ui-view></div>
+
+</body>
+</html>
